@@ -1,4 +1,4 @@
-# Hackweek-WEBCLI
+# Web CLI Terminal
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/AMANSINGH1674/Hackweek-WEBCLI/main/.github/banner.png" alt="Web CLI Terminal Banner" width="600"/>
@@ -10,109 +10,28 @@
   <img src="https://img.shields.io/badge/React-18-blue?style=flat-square" alt="React 18">
   <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square" alt="TypeScript 5">
   <img src="https://img.shields.io/badge/TailwindCSS-3-blue?style=flat-square" alt="TailwindCSS 3">
+  <a href="https://hackweek-webcli.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-Netlify-green?style=flat-square" alt="Live Demo"></a>
 </p>
 
 ---
 
-## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Command Reference](#command-reference)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## 🏆 Challenge Overview
+
+**Category:** Full Stack & UI/UX  
+**Difficulty:** Intermediate  
+**Points:** 400  
+
+> Build a browser-based terminal interface that mimics a real command-line experience. The web CLI should allow users to execute common file system commands with in-browser state management—no actual file system access is required. Your web-based CLI should support a defined set of commands: `mkdir`, `ls`, `cd`, `rmdir`, `rm`, `touch`, `mv`, `cp`, and `curl` (simulated). The terminal must reject any commands outside this list with an appropriate error message. All operations should occur in a simulated, in-memory file system, and the entire interface must run fully in the browser.
 
 ---
 
-## About
+## 🎯 Solution Summary
 
-**Hackweek-WEBCLI** is a beautiful, production-ready web-based command-line interface (CLI) simulator. It provides a realistic terminal experience in your browser, complete with a simulated file system, command history, tab completion, themes, and more. Perfect for demos, education, or just having fun with a terminal in the browser!
-
----
-
-## Features
-
-- 🎨 **Modern UI**: Responsive, themeable, and accessible terminal interface
-- 🗂️ **Simulated File System**: Create, move, and manage files and directories
-- 🧠 **Command Help & Suggestions**: Built-in help and command reference
-- ⌨️ **Keyboard Shortcuts**: Tab completion, history navigation, and more
-- 🌈 **Multiple Themes**: Switch between beautiful color schemes
-- 🖥️ **System Commands**: Simulated system info, process list, and more
-- 📦 **Built with React, TypeScript, and Tailwind CSS**
+**Web CLI Terminal** is a production-ready, browser-based command-line interface that simulates a real terminal experience. It features a fully in-memory file system, robust command support, and a beautiful, responsive UI. All operations are performed client-side, ensuring security and speed. The project is deployed at: [https://hackweek-webcli.netlify.app/](https://hackweek-webcli.netlify.app/)
 
 ---
 
-## Screenshots
-
-<p align="center">
-  <img src=".github/screenshot1.png" alt="Web CLI Terminal Screenshot" width="700"/>
-  <br/>
-  <img src=".github/screenshot2.png" alt="Command Help Screenshot" width="700"/>
-</p>
-
----
-
-## Getting Started
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- npm or yarn
-
-### Installation
-```bash
-npm install
-```
-
-### Running the App
-```bash
-npm run dev
-```
-
-Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal).
-
----
-
-## Usage
-
-- Type `help` to see all available commands
-- Use <kbd>Tab</kbd> for command and path completion
-- Navigate command history with <kbd>↑</kbd>/<kbd>↓</kbd> arrow keys
-- Use <kbd>Ctrl+L</kbd> to clear the screen
-- Try `neofetch` for system info, or `theme` to change colors
-
-### Example Commands
-```sh
-ls -la
-cd Documents
-cat welcome.txt
-mkdir new_folder
-curl https://api.github.com/users/octocat
-theme cyberpunk
-```
-
----
-
-## Command Reference
-
-A comprehensive command reference is available in the app (click "Show Help").
-
-**Categories:**
-- File System: `ls`, `cd`, `mkdir`, `rmdir`, `touch`, `rm`, `mv`, `cp`, `cat`, `find`, `tree`
-- System: `pwd`, `whoami`, `date`, `uptime`, `ps`, `top`, `df`, `free`, `neofetch`, `history`, `clear`
-- Utilities: `echo`, `grep`, `which`, `man`
-- Network: `curl`
-- Customization: `theme`, `alias`, `export`
-
-Use `man <command>` for detailed help on any command.
-
----
-
-## Project Structure
+## 🗂️ Repository Structure
 
 ```
 project-root/
@@ -130,7 +49,108 @@ project-root/
 
 ---
 
-## Technologies Used
+## 🚀 Quick Start
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- npm or yarn
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/AMANSINGH1674/Hackweek-WEBCLI.git
+cd Hackweek-WEBCLI
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Run the App Locally
+```bash
+npm run dev
+```
+
+Open your browser and navigate to [http://localhost:5173](http://localhost:5173)
+
+### 4. Try the Live Demo
+[https://hackweek-webcli.netlify.app/](https://hackweek-webcli.netlify.app/)
+
+---
+
+## 🖥️ Features
+
+- **Modern Terminal UI:** Responsive, themeable, and accessible
+- **In-Memory File System:** All operations are simulated in-browser
+- **Supported Commands:**
+  - `ls` — List directory contents
+  - `cd` — Change directory
+  - `mkdir` — Create directory
+  - `rmdir` — Remove empty directory
+  - `rm` — Remove file or directory
+  - `touch` — Create empty file
+  - `mv` — Move/rename file or directory
+  - `cp` — Copy file or directory
+  - `cat` — Display file contents
+  - `curl` — Simulate fetching data from a URL (returns dummy JSON)
+- **Command Help & Suggestions:** Built-in help panel and usage hints
+- **Keyboard Shortcuts:** Tab completion, history navigation, clear screen, and more
+- **Multiple Themes:** Switch between beautiful color schemes
+- **Error Handling:** Unrecognized commands are rejected with clear messages
+- **No Backend Required:** 100% client-side, secure, and fast
+
+---
+
+## 🧑‍💻 Usage Examples
+
+```sh
+# List files and directories
+ls -la
+
+# Create and navigate directories
+mkdir projects
+cd projects
+
+# Create a file and view its contents
+touch hello.txt
+cat hello.txt
+
+# Move and copy files
+mv hello.txt greetings.txt
+cp greetings.txt backup.txt
+
+# Remove files and directories
+rm backup.txt
+cd ..
+rmdir projects
+
+# Simulate fetching data from a URL
+curl https://api.github.com/users/octocat
+```
+
+---
+
+## 📋 Command Reference
+
+| Command   | Description                        | Example Usage                  |
+|-----------|------------------------------------|-------------------------------|
+| ls        | List directory contents            | ls -l /home                   |
+| cd        | Change directory                   | cd Documents                  |
+| mkdir     | Create directory                   | mkdir newdir                  |
+| rmdir     | Remove empty directory             | rmdir olddir                  |
+| rm        | Remove file or directory           | rm file.txt                   |
+| touch     | Create empty file                  | touch notes.txt               |
+| mv        | Move/rename file or directory      | mv old.txt new.txt            |
+| cp        | Copy file or directory             | cp file.txt backup.txt        |
+| cat       | Display file contents              | cat readme.txt                |
+| curl      | Simulate fetching data from a URL  | curl https://api.example.com  |
+
+- Any command outside this list will return: `Command not recognized.`
+- All operations are performed in a simulated, in-memory file system.
+
+---
+
+## 🛠️ Technologies Used
 - [React](https://react.dev/) (18+)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -139,7 +159,7 @@ project-root/
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please open issues or pull requests for new features, bug fixes, or suggestions.
 
@@ -151,18 +171,20 @@ Contributions are welcome! Please open issues or pull requests for new features,
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Contact
+## 📬 Contact
 
-Created by [Aman Singh](https://github.com/AMANSINGH1674) · [GitHub](https://github.com/AMANSINGH1674/Hackweek-WEBCLI)
+Created by [Aman Singh](https://github.com/AMANSINGH1674)  
+Project Repository: [AMANSINGH1674/Hackweek-WEBCLI](https://github.com/AMANSINGH1674/Hackweek-WEBCLI)  
+Live Demo: [https://hackweek-webcli.netlify.app/](https://hackweek-webcli.netlify.app/)
 
 ---
 
 <p align="center">
-  <em>Made with ❤️ for Hackweek</em>
+  <em>Made with ❤️ for Hackweek & the Web CLI Challenge</em>
 </p> 
